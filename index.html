@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXT Website</title>
+    <title>M.D.Besseling</title>
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
@@ -17,7 +17,8 @@
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo">
-                <i class="fas fa-gem"></i>NEXT</a>
+                <img src="images/mdb_logo.png" alt="pic", id="logo">   
+            </a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -39,6 +40,11 @@
                         Products
                     </a>
                 </li>
+                <li class="navbar__item">
+                  <a href="/" class="navbar__links">
+                      Team
+                  </a>
+              </li>
                 <li class="navbar__btn">
                     <a href="/" class="button">
                         Sign up
@@ -51,15 +57,46 @@
     <!-- Hero section -->
     <div class="main">
         <div class="main__container">
-            <div class="main__content">
-                <h1>NEXT GENERATION</h1>
-                <h2>TECHNOLOGY</h2>
-                <p>See what makes us different.</p>
-                <button class="main__btn"><a href="/
-                    ">Get started</a></button>
-            </div>
-            <div class="main_img--container">
-                <img src="images/pic1.svg" alt="pic" id="main__img">
+            <!--image slider-->
+            <div class="slider">
+              <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                  <img src="/images/front_img.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/images/front_img_2.jpeg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/images/front_img_3.jpeg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/images/front_img_4.jpeg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/images/front_img_5.jpeg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                  <div class="auto-btn4"></div>
+                  <div class="auto-btn5"></div>
+                </div>
+              </div>
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+              </div>
             </div>
         </div>
     </div>
@@ -81,7 +118,7 @@
         </div>
     </div>
 
-    <! -- footer section -->
+    <!-- footer section -->
     <div class="footer__container">
         <div class="footer__links">
           <div class="footer__link--wrapper">
@@ -110,56 +147,48 @@
             </div>
           </div>
         </div>
-        <section class="social__media">
-          <div class="social__media--wrap">
-            <div class="footer__logo">
-              <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
-            </div>
-            <p class="website__rights">© NEXT 2020. All rights reserved</p>
-            <div class="social__icons">
-              <a
-                class="social__icon--link"
-                href="/"
-                target="_blank"
-                aria-label="Facebook"
-              >
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a
-                class="social__icon--link"
-                href="/"
-                target="_blank"
-                aria-label="Instagram"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a
-                class="social__icon--link"
-                href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
-                target="_blank"
-                aria-label="Youtube"
-              >
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a
-                class="social__icon--link"
-                href="/"
-                target="_blank"
-                aria-label="Twitter"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a
-                class="social__icon--link"
-                href="/"
-                target="_blank"
-                aria-label="LinkedIn"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-          </div>
-        </section>
+        <div class="social__icons">
+          <a
+            class="social__icon--link"
+            href="/"
+            target="_blank"
+            aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+            target="_blank"
+            aria-label="Youtube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="/"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div><p class="website__rights">© M.D.Besseling 2021. All rights reserved</p></div>
       </div>
     <script src="app.js"></script>
 </body>
