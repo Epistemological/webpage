@@ -222,7 +222,7 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 500px;
+    height: 400px;
     background-color: #b3b3b362;
     z-index: 1;
     width: 100%;
@@ -232,7 +232,22 @@
     background-size: cover;
   }
 
-  /* footer CSS */
+  /*
+  .background-image{
+    height: 400px;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    height: 100%;
+    
+  }
+
+  */
+
+  /* footer CSS test */
 
   .footer__container {
     background-color: #b3b3b362;
