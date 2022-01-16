@@ -323,14 +323,17 @@
   /* SERVICES SECTION */
 
   .services {
-    background-color: #b3b3b362;
-    height: 120vh;
+    background: #b3b3b362;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
   }
-
+  
   .services h1 {
-    background-color: #1b1c6b;
-    background-image: linear-gradient(
-    to top,
+    background-color: #000000;
+    background-image: linear-gradient(to top,
     #dcd8e9 0%,
     #ada5ca 0%,
     #7d70ac 21%,
@@ -345,98 +348,85 @@
     margin-bottom: 5rem;
     font-size: 2.5rem;
   }
-
+  
   .services__container {
-    display: grid;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-
+  
   .services__card {
-    height: 500px;
+    margin: 1rem;
+    height: 525px;
     width: 400px;
     border-radius: 4px;
     background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.6) 100%
-    ), url('images/front_img_5.jpg');
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('images/front_img_5.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
-    margin-left: 400px;
-    float: left;
   }
-
+  
   .services__card:before {
     opacity: 0.2;
   }
 
-  .services__intro {
-    height: 500px;
+  .services__text {
+    margin: 1rem;
+    height: 525px;
     width: 400px;
-    border-radius: 4px;
-    position: relative;
-    color: #fff;
-    margin-right: 400px;
-    float: right;
+    padding-top: 15%;
+    font-size: 2rem;
   }
-
-  .services__card:nth-child(3) {
+  
+  .services__card:nth-child(2) {
     background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
-    ),
-    url('images/front_img_6.jpg');
-    margin-top: 100px;
-    margin-left: 1100px;
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('images/front_img_6.jpg');
   }
-
-  .services__product {
-    height: 500px;
-    width: 400px;
-    float: left;
-    margin-left: 400px;
-    position: relative;
-
-  }
-
+  
   .services__card h2 {
     position: absolute;
     top: 350px;
-    left:30px;
+    left: 30px;
   }
-
-  .services__card h2 {
+  
+  .services__card p {
     position: absolute;
-    top: 350px;
-    left:30px;
+    top: 400px;
+    left: 30px;
   }
-
+  
   .services__card button {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    outline:none;
-    border-radius:4px;
-    background-image:linear-gradient(to top,
+    outline: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top,
     #dcd8e9 0%,
     #ada5ca 0%,
     #7d70ac 21%,
     #564496 52%,
     #261661 78%,
     #100635 100%);
-    position:absolute;
-    top:440px;
-    left:30px;
-    font-size:1rem;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
   }
   
   .services__card button:hover {
     cursor: pointer;
   }
-
+  
   .services__card:hover {
     transform: scale(1.02);
     transition: 0.2s ease-in;
